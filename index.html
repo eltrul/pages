@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Funky Cirno Fumo</title>
+      <link rel="shortcut icon" href="https://fumo.fun/static/favicon.ico">
+      <meta property="og:title" content="Funky Fumos" />
+      <meta name="theme-color" content="#a3d9e4">
+      <meta property="og:image" content="https://fumo.fun/static/cirno_dance.gif" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:description" content="FUNKY CIRNO FUMOS NEAR YOU!!!" />
+      <style>
+         img {
+         max-height: 100vh;
+         max-width: 100%;
+         }
+         body {
+         background-color: black;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0px;
+         }
+      </style>
+   </head>
+   <body>
+      <audio autoplay hidden loop id="autoplay">
+         <source src="https://fumo.fun/static/funky.mp3" type="audio/mpeg">
+      </audio>
+      <script>
+         var aud = document.getElementById("autoplay");
+         setTimeout(function(){aud.play()},500);
+         document.onclick=function(){aud.play()};
+         document.onmouseover=function(){aud.play()};
+            
+      </script>
+      <img src="https://fumo.fun/static/cirno_spin.gif">
+   </body>
+</html>
